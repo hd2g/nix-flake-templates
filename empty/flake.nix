@@ -16,7 +16,7 @@
             default = pkgs.mkShellNoCC {
               buildInputs = with pkgs; [
                 # TODO: Add dependencies here
-              ]
+              ];
             };
           };
         }
