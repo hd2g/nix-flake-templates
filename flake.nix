@@ -20,6 +20,11 @@
         path = ./OCaml5;
         description = "Ocaml v5.* template";
       };
+
+      CommonLisp = {
+        path = ./CommonLisp;
+        description = "CommonLisp template";
+      };
     };
 
     defaultTemplate = templates.empty;
