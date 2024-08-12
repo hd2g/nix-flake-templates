@@ -15,11 +15,20 @@
         rec {
           devShells = {
             default = pkgs.mkShellNoCC {
+              UTOP_SITE_LSIP = "${ocamlPackages.utop}/share/emacs/site-lisp";
+              MERLIN_SITE_LSIP = "${ocamlPackages.merlin}/share/emacs/site-lisp";
+              OCP_INDENT_SITE_LSIP = "${ocamlPackages.ocp-indent}/share/emacs/site-lisp";
+
               buildInputs = with pkgs; [
               ] ++ (with ocamlPackages; [
                 dune_3
                 ocaml
                 merlin
+                dot-merlin-reader
+                ocp-indent
+                utop
+
+                # More packages...
               ]);
             };
           };
