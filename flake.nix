@@ -21,6 +21,11 @@
         description = "Ocaml v5.* template";
       };
 
+      Rust = {
+        path = ./Rust;
+        description = "Rust nightly template";
+      };
+
       CommonLisp = {
         path = ./CommonLisp;
         description = "CommonLisp template";
