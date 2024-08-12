@@ -20,6 +20,11 @@
                 dune_3
                 ocaml
                 merlin
+                dot-merlin-reader
+                ocp-indent
+                utop
+
+                # More packages...
               ]);
             };
           };
