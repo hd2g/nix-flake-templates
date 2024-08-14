@@ -18,6 +18,7 @@
                 (with dotnetCorePackages; combinePackages [
                   sdk_8_0
                 ])
+                fsautocomplete
               ];
             };
           };
