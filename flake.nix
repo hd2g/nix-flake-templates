@@ -6,6 +6,11 @@
         description = "Empty template";
       };
 
+      PureScript = {
+        path = ./PureScript;
+        description = "PureScript template";
+      };
+
       FSharp = {
         path = ./FSharp;
         description = "FSharp template";
