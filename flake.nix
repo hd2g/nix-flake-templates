@@ -31,6 +31,11 @@
         description = "Rust nightly template";
       };
 
+      Racket = {
+        path = ./Racket;
+        description = "Racket template";
+      };
+
       CommonLisp = {
         path = ./CommonLisp;
         description = "CommonLisp template";
