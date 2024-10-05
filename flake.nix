@@ -45,6 +45,11 @@
         path = ./CommonLisp;
         description = "CommonLisp template";
       };
+
+      LaTeX = {
+        path = ./LaTeX;
+        description = "LaTeX template";
+      };
     };
 
     defaultTemplate = templates.empty;
