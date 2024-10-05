@@ -18,17 +18,12 @@
                 racket-minimal
               ];
 
-              # shellHook = ''
-              #   if [[ -z "$(raco pkg show | grep typed-racket)" ]]; then
-              #     read -p "Do you want to install typed-racket?(Y/n): " yn
-              #     case "$yn" in
-              #       [nN]*) ;;
-              #       *)
-              #         yes | raco pkg install typed-racket
-              #         ;;
-              #     esac
-              #   fi
-              # '';
+              shellHook = ''
+                if [[ -z "$(raco pkg show | grep typed-racket)" ]]; then
+                  read -n1 -p "Do you want to install typed-racket?(Y/n): " yn
+                  [[ $yn = [yY] ]] && $(yes | raco pkg install typed-racket)
+                fi
+              '';
             };
           };
         }
