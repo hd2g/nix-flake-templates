@@ -36,6 +36,11 @@
         description = "Racket template";
       };
 
+      R = {
+        path = ./R;
+        description = "R template";
+      };
+
       CommonLisp = {
         path = ./CommonLisp;
         description = "CommonLisp template";
