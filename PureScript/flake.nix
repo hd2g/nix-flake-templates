@@ -7,7 +7,7 @@
     easy-purescript-nix.url = "github:justinwoo/easy-purescript-nix";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
+  outputs = { self, nixpkgs, flake-utils, easy-purescript-nix }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
