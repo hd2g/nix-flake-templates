@@ -28,6 +28,7 @@
           devShells = {
             default = pkgs.mkShellNoCC {
               buildInputs = with pkgs; [
+                clang
                 rust
               ];
             };
