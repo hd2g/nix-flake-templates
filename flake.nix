@@ -31,6 +31,11 @@
         description = "Rust nightly template";
       };
 
+      Gleam = {
+        path = ./Gleam;
+        description = "Gleam template";
+      };
+
       Racket = {
         path = ./Racket;
         description = "Racket template";
