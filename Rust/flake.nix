@@ -30,6 +30,8 @@
               buildInputs = with pkgs; [
                 clang
                 rust
+                pkg-config
+		openssl
               ];
             };
           };
